@@ -1,0 +1,22 @@
+{
+  "name": "MediaPlayer",
+  "description": "Media player",
+  "main": "index.js",
+  "authors": [
+    "Anuj Malla <anujmalla@purplequantum.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.7"
+  }
+}
