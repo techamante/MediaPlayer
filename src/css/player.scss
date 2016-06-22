@@ -1,0 +1,133 @@
+
+
+
+$line-height:30px;
+
+.footer{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  max-height:100px;
+  background:black;
+  color:white;
+  .container{
+    height:auto;
+    line-height:inherit;
+  }
+}
+
+
+.player{
+  height:inherit;
+  padding:5px;
+  display:flex;
+  
+  .icon{
+    vertical-align:middle;
+    cursor:pointer;
+  }
+  
+  .controls{
+    line-height:$line-height;
+  }
+  
+  .display-bar{
+    margin:0 25px;
+    height:inherit;
+    flex:1;
+    background:rgba(0,0,0,0.5);
+    position:relative;
+    
+    .end-time{
+      float:right;
+    }
+  }
+  
+  .control-right{
+    line-height:$line-height;
+    .volume{
+      position:absolute;
+      height:100px;
+      background:#DDD;
+      top:-100px;
+      width:20px;
+      display:none;
+    }
+  }
+
+  .aside{
+    line-height:$line-height;
+    width:300px;
+    position:relative;
+    flex:0 0 300;
+    
+    .controls-playlist{
+      float:right;
+    }
+    
+    .song-info{
+      
+      padding:0;
+      margin:0;
+      li{
+        list-style:none;
+        display:inline-block;
+        padding:0;
+        margin:0;
+      } 
+      width:100%;
+      
+      img{
+        vertical-align:bottom;
+      }
+      .artist-info{
+          font-size:10px;
+          color:gray;
+          line-height:10px;
+        }
+      .song-name{
+        font-size:12px;
+        line-height:18px;
+      }
+    }
+    
+    .playlist{
+      position:absolute;
+      height:300px;
+      background:rgba(0,0,0,0.5);
+      left:0;
+      right:0;
+      top:-305px;
+      overflow-y:auto;
+      display:none;
+      border:1px solid #EEE;
+      box-shadow:2px 0px 3px #AAA;
+    }
+  }
+  
+  .progress{
+    margin-bottom:0;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:5px;
+    background:red;
+    #handler{
+      
+    }
+         
+  }
+  
+  .video-player{
+    height:400px;
+    position:absolute;
+    top:-400px;
+    background:rgba(0,0,0,0.4);
+    left:0;
+    right:0;
+    display:none;
+  }
+  
+}
