@@ -52,8 +52,16 @@ module.exports = function (grunt) {
                 files:[{
                     expand: true, cwd: 'src/', src: ['**/*.html'], dest: 'out/'
                 },{
-                    'angular.js':['bower_components/angular/angular.js']
-                }]
+                    'out/libs/angular.js':['bower_components/angular/angular.js'],
+                    'out/libs/bootstrap.js':['bower_components/bootstrap/dist/js/bootstrap.js'],
+                    'out/libs/jquery.js':['bower_components/jquery/dist/jquery.js'],
+                    'out/css/bootstrap.css':['bower_components/bootstrap/dist/css/bootstrap.css'],
+                    'out/css/bootstrap-theme.css':['bower_components/bootstrap/dist/css/bootstrap-theme.css'],
+                },
+                {
+                    expand:true, cwd:'bower_components/bootstrap/dist/fonts', src:["**"], dest:'out/fonts'
+                }
+                ]
             }
         }
     });
